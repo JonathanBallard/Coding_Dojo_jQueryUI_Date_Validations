@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>Date Validations</title>
+
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+
+          $('#submit').click(function() {
+            console.log('test');
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var date = $('#datepicker').val();
+            alert('Hello ' + name + " we have " + email + " listed as your email address. Created on " + date);
+
+        });
+        } );
+
+        
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+
+    <h1>My Form:</h1>
+
+    <div class="form-group">
+      <label for="">Name</label>
+      <input type="text" name="" id="name" class="form-control" placeholder="name" aria-describedby="helpId">
+      <br>  
+      <label for="">Email</label>
+        <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="email">
+
+        <p>Date: <input type="text" id="datepicker"></p>
+
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+      
+   
+
+
+
+
+</body>
+</html>
